@@ -1,8 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import newConsentReducer from '../features/newConsent/newConsentSlice';
+import consentsListReducer from '../features/consentList/consentListSlice';
+import consentsReducer from '../features/consents/consentsSlice';
 
 export default configureStore({
   reducer: {
-    counter: counterReducer,
+    newConsent: newConsentReducer,
+    consentList: consentsListReducer,
+    consents: consentsReducer,
   },
 });
